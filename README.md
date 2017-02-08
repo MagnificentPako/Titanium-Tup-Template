@@ -7,4 +7,6 @@ Optionally you can install [NaturalDocs](http://www.naturaldocs.org/) or any oth
 
 Once you have everything you need, just call build.sh (if you need more than just packaging, for example docs) or ``tup upd`` and watch the magic happen. You have to keep in mind that there has to be atleast on file in ___markup___,___styles___ and ___nodes___. This is due to a "limitation" of Tup. Just keep some empty file in there and you are good to go.
 
-The packaged file can be found in _build-default/project_ as ___out.lua___.
+The packaged file can be found in _project_ as ___out.lua___.
+
+If you want it to compile into a separate folder (idk why you would need that though) you can do ``tup variant default`` and it will compile everything into _build-default/..._.
