@@ -1,5 +1,4 @@
 .ndocs/Data
-.tup
 build-default
 docs/*
 !docs/.gitkeep
