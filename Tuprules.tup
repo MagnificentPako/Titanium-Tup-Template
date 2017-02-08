@@ -1,0 +1,13 @@
+TOP = $(TUP_CWD)
+
+# Compilers
+  # MetaLua
+    !meta = |> metalua -f %f ++run -S > %o |>
+  # Moonscript
+    !moon = |> moonc -o %o %f |>
+  # Cat (just copies the file)
+    !cat = |> cat %f > %o |>
+
+# Packaging
+!packageNoTitanium = |> lua bin/package.lua -m -tid --source=compiled --init=compiled/main.lua --output=%o |>
+!package = |> lua bin/package.lua -m --titanium --titanium-version=v0.1.0-alpha.7 --source=compiled --init=compiled/main.lua --output=%o |>
