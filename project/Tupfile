@@ -3,7 +3,7 @@ include_rules
 # Add/Remove whatever you might need
 
   # MetaLua in every single damn folder
-    : foreach src/**.mlua |> !meta |> compiled/%B.lua
+    : foreach src/*.mlua |> !meta |> compiled/%B.lua
     : foreach src/nodes/*.mlua |> !meta |> compiled/nodes/%B.lua
     : foreach src/styles/*.mlua |> !meta |> compiled/styles/%B.lua
     : foreach src/markup/*.mlua |> !meta |> compiled/markup/%B.lua
