@@ -2,3 +2,5 @@
 build-default
 docs/*
 !docs/.gitkeep
+project/out.lua
+project/compiled
