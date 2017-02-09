@@ -4,3 +4,4 @@ docs/*
 !docs/.gitkeep
 project/out.lua
 project/compiled
+project/test/.compiled
