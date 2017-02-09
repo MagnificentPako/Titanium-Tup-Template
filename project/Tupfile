@@ -14,6 +14,8 @@ include_rules
     : foreach src/styles/*.moon |> !moon |> compiled/styles/%B.lua
     : foreach src/markup/*.moon |> !moon |> compiled/markup/%B.lua
 
+    : foreach src/*.oc |> !oczor |> compiled/%B.lua
+
   # Themes
     : foreach src/styles/*.theme |> !cat |> compiled/styles/%B.theme
 
