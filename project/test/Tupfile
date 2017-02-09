@@ -1,0 +1,2 @@
+include_rules
+: specs/*.moon |> !moon |> .compiled/%B.lua
