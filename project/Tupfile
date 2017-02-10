@@ -18,10 +18,11 @@ include_rules
 
   # Themes
     : foreach src/styles/*.theme |> !cat |> compiled/styles/%B.theme
+    : foreach src/styles/*.haml |> !haml |> compiled/styles/%B.theme
 
   # Markup
     : foreach src/markup/*.tml |> !cat |> compiled/markup/%B.tml
-
+    : foreach src/markup/*.haml |> !haml |> compiled/markup/%B.tml
   # Nodes
     : foreach src/nodes/*.ti |> !cat |> compiled/nodes/%B.ti
 

@@ -1,6 +1,8 @@
 TOP = $(TUP_CWD)
 
 # Compilers
+  # HAML
+    !haml = |> ^ HAML %f^ haml %f %o |>
   # MetaLua
     !meta = |> ^ MetaLua %f^ metalua -f %f ++run -S > %o |>
   # Moonscript
