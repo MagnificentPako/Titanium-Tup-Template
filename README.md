@@ -12,5 +12,4 @@ The packaged file can be found in _project_ as ___out.lua___.
 If you want it to compile into a separate folder (idk why you would need that though) you can do ``tup variant default`` and it will compile everything into _build-default/..._.
 
 # Testing
-Right now it is using [Telescope](https://github.com/norman/telescope) because that's the first testing utility I got to work. If anyone has more experience with that stuff, please tell me how to add better ones (if they are even needed).
-The folder structure for the tests might look a bit weird because it compiles the .moon files to .lua ones under the hood, because Telescope doesn't natively support Moonscript, which is kinda sad. If you want to use other .moon files from the _src_ folder you have to ``require "moonscript"`` first so subsequent ``require`` calls convert .moon files for you. Or you just load the stuff from the _compiled_ folder. 
+It is currently using Busted. Just write some specs in the _spec_ folder and let the magic happen.
